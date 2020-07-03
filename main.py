@@ -20,6 +20,7 @@ def get_db():
 
 @app.get("/pets", response_model=List[schemas.Pet])
 async def list_pets(kind: str = None, db: Session = Depends(get_db)):
+    '''Endpoint to list pets'''
     return crud.list_pets_with_filter(db, kind)
 
 
