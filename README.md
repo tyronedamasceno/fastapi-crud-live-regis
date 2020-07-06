@@ -9,6 +9,8 @@ git clone https://github.com/tyronedamasceno/fastapi-crud-live-regis.git
 cd fastapi-crud-live-regis
 python -m venv .venv
 source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload
 ```
 
 
